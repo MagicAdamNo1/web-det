@@ -4,9 +4,9 @@ jobs:
   start_test_user_service:
     name: test user service
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: test-user
-        shell:  bash
+    # defaults:
+    #   run:
+    #     working-directory: test-user
+    #     shell:  bash
     steps:
     - run:  echo 'he'
