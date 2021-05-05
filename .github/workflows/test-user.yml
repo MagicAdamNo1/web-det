@@ -1,11 +1,12 @@
 name: Test user service
 on: [push]
 jobs:
-  start test user service:
+  start_test_user_service:
     name: test user service
-    runs-on:  linux
+    runs-on: ubuntu-latest
     defaults:
+      run:
         working-directory: test-user
         shell:  bash
     steps:
-      run:  ls
+    - run:  ls
