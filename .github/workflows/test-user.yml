@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./test-user
+        working-directory: test-user
         shell:  bash
     steps:
-    - run:  ls
+    - run:  echo 'he'
