@@ -9,4 +9,4 @@ jobs:
     #     working-directory: test-user
     #     shell:  bash
     steps:
-    - run:  echo 'he'
+    - run:  ls
