@@ -5,6 +5,7 @@
   "main": "app.js",
   "dependencies": {
     "express": "^4.17.1",
+    "mariadb": "^2.5.3",
     "sequelize": "^6.6.2"
   },
   "devDependencies": {},
