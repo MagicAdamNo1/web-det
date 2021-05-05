@@ -1,0 +1,79 @@
+<!--
+ * @Descripttion: 
+ * @version: v0.1
+ * @Author: Elon C
+ * @Date: 2021-04-02 17:06:26
+ * @LastEditors: Elon C
+ * @LastEditTime: 2021-04-03 17:39:39
+ * @FilePath: \project\neky-report\views\results.html
+-->
+<html>
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Result Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.bootcss.com/jquery/3.2.0/jquery.js"></script>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <th>
+                uid
+            </th>
+            <th>
+                sid
+            </th>
+            <th>
+                clickFrequencies(次/秒)
+            </th>
+            <th>
+                clickSeries
+            </th>
+        </tr>
+    </table>
+</body>
+<script>
+    $(document).ready(function () {
+        $.getJSON('/data', function (res) {
+            for (i = 0; i < res['length']; i++) {
+                data = res.data[i];
+                console.log(data);
+                // console.log($('table').children('tr').last())
+
+                var table = document.getElementsByTagName("table");
+
+                for (let item in data.clickSeries) {
+                    newline = document.createElement("tr");
+
+                    uid = document.createElement('td');
+                    uid.innerHTML = data.uid;
+                    newline.appendChild(uid);
+
+                    sid = document.createElement('td');
+                    sid.innerHTML = data.sid;
+                    newline.appendChild(sid);
+
+                    clickFrequencies = document.createElement('td');
+                    clickFrequencies.innerHTML = data.clickFrequencies;
+                    newline.appendChild(clickFrequencies);
+
+                    clickSeries = document.createElement('td');
+                    clickSeries.innerHTML = data.clickSeries[item];
+
+                    newline.appendChild(clickSeries);
+
+                    table[0].appendChild(newline);
+                }
+
+                // var lastChild = table.lastChild
+                // $('table').children('tr').last().after('<tr><td>师傅</td></tr>');
+            }
+        })
+    });
+</script>
+
+</html>

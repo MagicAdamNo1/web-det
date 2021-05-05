@@ -1,0 +1,11 @@
+name: Test user service
+on: [push]
+jobs:
+  start test user service:
+    name: test user service
+    runs-on:  linux
+    defaults:
+        working-directory: test-user
+        shell:  bash
+    steps:
+      run:  ls

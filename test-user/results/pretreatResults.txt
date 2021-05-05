@@ -1,0 +1,411 @@
+[
+    {
+        "uid": "knrjuek357941",
+        "records": [
+            {
+                "sid": "1619015193651",
+                "clickFrequency": 0,
+                "minTime": "1619015196178",
+                "maxTime": "1619015196178",
+                "clickSeries": [
+                    "http://localhost:8080/#1"
+                ]
+            }
+        ]
+    },
+    {
+        "uid": "knrjuogx14075",
+        "records": [
+            {
+                "sid": "1619015206497",
+                "clickFrequency": 2.8612303290414878,
+                "minTime": "1619015206499",
+                "maxTime": "1619015207198",
+                "clickSeries": [
+                    "http://localhost:8080/#1",
+                    "http://localhost:8080/#1"
+                ]
+            }
+        ]
+    },
+    {
+        "uid": "knrjuv9379902",
+        "records": [
+            {
+                "sid": "1619015215287",
+                "clickFrequency": 1.7331022530329288,
+                "minTime": "1619015215289",
+                "maxTime": "1619015217020",
+                "clickSeries": [
+                    "http://localhost:8080/#1",
+                    "http://localhost:8080/#1",
+                    "http://localhost:8080/#1"
+                ]
+            },
+            {
+                "sid": "1619015218035",
+                "clickFrequency": 0,
+                "minTime": "1619015220318",
+                "maxTime": "1619015220318",
+                "clickSeries": [
+                    "http://localhost:8080/#0"
+                ]
+            }
+        ]
+    },
+    {
+        "uid": "knrjvkno40126",
+        "records": [
+            {
+                "sid": "1619015248212",
+                "clickFrequency": 0,
+                "minTime": "1619015250488",
+                "maxTime": "1619015250488",
+                "clickSeries": [
+                    "http://localhost:8080/#0"
+                ]
+            }
+        ]
+    },
+    {
+        "uid": "knrk41jn90184",
+        "records": [
+            {
+                "sid": "1619015643347",
+                "clickFrequency": 0,
+                "minTime": "1619015650329",
+                "maxTime": "1619015650329",
+                "clickSeries": [
+                    "http://localhost:8080/#0"
+                ]
+            }
+        ]
+    },
+    {
+        "uid": "knrkkk8j67165",
+        "records": [
+            {
+                "sid": "1619016414067",
+                "clickFrequency": 0,
+                "minTime": "1619016415364",
+                "maxTime": "1619016415364",
+                "clickSeries": [
+                    "http://localhost:8080/#1"
+                ]
+            }
+        ]
+    },
+    {
+        "uid": "knrkklrt13463",
+        "records": [
+            {
+                "sid": "1619016416057",
+                "clickFrequency": 0.595503945213637,
+                "minTime": "1619016416059",
+                "maxTime": "1619016422776",
+                "clickSeries": [
+                    "http://localhost:8080/#1",
+                    "http://localhost:8080/#1",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0"
+                ]
+            }
+        ]
+    },
+    {
+        "uid": "knrkkmu110404",
+        "records": [
+            {
+                "sid": "1619016417433",
+                "clickFrequency": 0,
+                "minTime": "1619016417434",
+                "maxTime": "1619016417434",
+                "clickSeries": [
+                    "http://localhost:8080/#1"
+                ]
+            }
+        ]
+    },
+    {
+        "uid": "knrklwyt21231",
+        "records": [
+            {
+                "sid": "1619016477221",
+                "clickFrequency": 0.3998276067981078,
+                "minTime": "1619016477224",
+                "maxTime": "1619016669807",
+                "clickSeries": [
+                    "http://localhost:8080/#1",
+                    "http://localhost:8080/#1",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#1",
+                    "http://localhost:8080/#1",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#2",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#2",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#2",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0"
+                ]
+            }
+        ]
+    },
+    {
+        "uid": "knrkpdo094055",
+        "records": [
+            {
+                "sid": "1619016638832",
+                "clickFrequency": 1.7497812773403325,
+                "minTime": "1619016638834",
+                "maxTime": "1619016639977",
+                "clickSeries": [
+                    "http://localhost:8080/#1",
+                    "http://localhost:8080/#1"
+                ]
+            }
+        ]
+    },
+    {
+        "uid": "knrkpf3084907",
+        "records": [
+            {
+                "sid": "1619016640668",
+                "clickFrequency": 0,
+                "minTime": "1619016640670",
+                "maxTime": "1619016640670",
+                "clickSeries": [
+                    "http://localhost:8080/#1"
+                ]
+            }
+        ]
+    },
+    {
+        "uid": "knrklw9j01045",
+        "records": [
+            {
+                "sid": "1619016479350",
+                "clickFrequency": 1.094890510948905,
+                "minTime": "1619016645977",
+                "maxTime": "1619016656937",
+                "clickSeries": [
+                    "http://localhost:8080/#1",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#1"
+                ]
+            },
+            {
+                "sid": "1619016671305",
+                "clickFrequency": 0.30534672647250827,
+                "minTime": "1619016673441",
+                "maxTime": "1619016768415",
+                "clickSeries": [
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#2",
+                    "http://localhost:8080/#2",
+                    "http://localhost:8080/#2"
+                ]
+            }
+        ]
+    },
+    {
+        "uid": "knrkx78569095",
+        "records": [
+            {
+                "sid": "1619017003733",
+                "clickFrequency": 0.005379480509544394,
+                "minTime": "1619017003736",
+                "maxTime": "1619018676760",
+                "clickSeries": [
+                    "http://localhost:8080/#1",
+                    "http://localhost:8080/#1",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#1"
+                ]
+            },
+            {
+                "sid": "1619018677831",
+                "clickFrequency": 0.1117094502909374,
+                "minTime": "1619018680913",
+                "maxTime": "1619018985274",
+                "clickSeries": [
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#1",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#1"
+                ]
+            },
+            {
+                "sid": "1619018986009",
+                "clickFrequency": 0.6919754706626261,
+                "minTime": "1619018989523",
+                "maxTime": "1619019031432",
+                "clickSeries": [
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#1",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#0",
+                    "http://localhost:8080/#1",
+                    "http://localhost:8080/#2",
+                    "http://localhost:8080/#2",
+                    "http://localhost:8080/#2",
+                    "http://localhost:8080/#2",
+                    "http://localhost:8080/#2",
+                    "http://localhost:8080/#2",
+                    "http://localhost:8080/#2"
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,267 @@
+<!--
+ * @Descripttion: 
+ * @version: v0.1
+ * @Author: Elon C
+ * @Date: 2021-03-31 10:25:10
+ * @LastEditors: Elon C
+ * @LastEditTime: 2021-04-21 02:28:30
+ * @FilePath: \web-det\web-det\index2.html
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>User Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap 的 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="resources/css/index.css"> -->
+
+    <script src="/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="card-group">
+            <div class="row row-cols-md-auto" id="users">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <h5 class="card-title inline-block">User 1</h5>
+                                </div>
+                                <div class="col-sm-2">
+                                    <button type="button" id="newUserBtn" class="btn btn-primary inline-block"
+                                        onclick="newSession(this)">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-check" id="s1">
+                            <input class="form-check-input" name="session" type="radio" onclick="setCookies(this)"
+                                checked="checked">
+                            Session 1
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary inline-block" onclick="newUser(this)">+</button>
+            </div>
+        </div>
+    </div>
+    <a id='1' data-url='aUrl' data-src='aSrc'>
+        <div>a链接(id=1)</div>
+    </a>
+    <div>
+        <div id='2' class="aaa bbb" data-url='divUrl' data-src='divSrc'>div链接(id=2)</div>
+        <a id='3' class="aaa" data-url='aUrl' data-src='aSrc'>a链接(id=3)</a>
+    </div>
+    <div id='4' data-url='divUrl' data-src='divSrc'>div链接(id=4)</div>
+    <div>
+        <button id='5' type="button">按钮(id=5)</button>
+    </div>
+    <div>
+        <input type="radio">用户1
+    </div>
+    <div>
+        <button id='7' type="button">用户2</button>
+    </div>
+    <div>
+        <button id='8' type="button">用户3</button>
+    </div>
+    <div>
+        <input type="checkbox">
+    </div>
+    <a id='0' data-url='aUrl' href="results" target="_blank" data-src='aSrc'>结果</a>
+    <div id="cross"></div>
+
+</body>
+
+<script>
+    let nekyRet = nekyEeport.init({
+        url: 'click',
+        isClick: true,
+        uid: '',
+        clickAttr: {
+            dom: ['p', 'button'],
+            noClassDom: ['a'],
+            // className: ['aaa'],
+            attr: [],
+            // {
+            //     objKey: 'clickId',
+            //     attrKey: 'data-src',
+            //     isUp: false,
+            //     tag: 'a div'
+            // }, {
+            //     objKey: 'href',
+            //     attrKey: 'href',
+            //     tag: 'a'
+            // }, {
+            //     objKey: 'clicksId',
+            //     attrKey: 'data-url',
+            //     tag: 'a'
+            // }, {
+            //     objKey: 'clicksId',
+            //     attrKey: 'data-url',
+            //     tag: 'div'
+            // }],
+            fun: function (data) {
+                return data
+            }
+        }
+    })
+    // nekyRet.watchApi('a', function (data) {
+    //     console.log('a')
+    //     console.log(data)
+    // })
+    // nekyRet.setData({
+    //     uid: 123
+    // })
+    // nekyRet.watchRead(function () {
+    //     return {
+    //         a: 1,
+    //         b: 2
+    //     }
+    // })
+    zca = [];
+    zcb = [];
+    semih = 30 * 60000;
+    window.onload = function () {
+        zcb[zca.length] = [(new Date).getTime()];
+        zca[zca.length] = setUid().toString(36);
+
+        sessions = document.querySelectorAll('.form-check-input');
+        // console.log(sessions)
+        for (i = 0; i < sessions.length; i++) {
+            // console.log(i)
+            // console.log(sessions[i])
+            if (sessions[i].checked) {
+                setCookies(sessions[i]);
+            }
+        }
+    }
+
+    //生成用户ID
+    function setUid() {
+        return ((new Date).getTime().toString(36) + ("" + Math.random()).slice(- 8).toString(36).substr(2, 5))
+    }
+    function newUser(ele) {
+        users = ele.parentElement;
+
+        while (users.getAttribute('class') != 'card-group') {
+            users = users.parentElement;
+        }
+        cards = users.getElementsByClassName('card')
+        user = cards[cards.length - 1];
+        nuser = user.cloneNode(true);
+        sessions = nuser.querySelectorAll('.form-check');
+        for (i = sessions.length - 1; i > 0; i--) {
+            sessions[i].remove();
+        }
+        // console.log(sessions)
+        user.insertAdjacentElement('afterend', nuser);
+        // console.log(user)
+        // console.log(user.querySelector('.card-title.inline-block').innerHTML)
+        s = 'User ' + (zca.length + 1)
+        // console.log(s)
+        nuser.querySelector('.card-title.inline-block').innerHTML = s;
+        // console.log(user.querySelector('.card-title.inline-block').innerHTML)
+        zcb[zca.length] = [(new Date).getTime()];
+        zca[zca.length] = setUid().toString(36);
+        setCookies(nuser.querySelector('.form-check-input'))
+
+    }
+
+    function newSession(ele) {
+        // console.log(ele.getAttribute('class'));
+        // console.log(ele.getAttribute('class') == 'btn btn-primary inline-block');
+
+        while (ele.getAttribute('class') !== 'card-header') {
+            ele = ele.parentNode;
+        }
+        // console.log(ele.getAttribute('class'));
+        // console.log(ele);
+        // console.log(ele.nextSibling);
+        while (ele.nodeName == '#text' || ele.getAttribute('class') !== 'card-body') {
+            ele = ele.nextSibling;
+        }
+        // console.log(ele);
+        // console.log(ele.childNodes);
+        childs = ele.getElementsByClassName('form-check');
+        sc = childs.length;
+        lc = childs[sc - 1];
+        // lc.querySelector('input').checked = "checked"
+        // console.log(lc);
+        nc = lc.cloneNode(true);//新的session选项
+        // sc = ele.getElementsByTagName('input').length;
+        // console.log(nc.lastChild.nodeValue);
+        nc.lastChild.nodeValue = 'Session ' + (++sc)//新的session选项字面值
+        // console.log(nc.childNodes);
+        nc.querySelector('input').checked = ""
+        ele.appendChild(nc);
+        console.log(nc.querySelector('input').checked)
+        // console.log(ele);
+        // sessions = document.querySelectorAll('.form-check-input');
+        // // console.log(sessions)
+        // for (i = 0; i < sessions.length; i++) {
+        //     // console.log(i)
+        //     // console.log(sessions[i])
+        //     if (sessions[i].checked) {
+        //         setCookies(sessions[i]);
+        //     }
+        // }
+    }
+
+    function setCookies(ele) {
+
+        let _win = window || null;
+        let _doc = _win.document;
+
+        function setCookie(key, val, time) {
+            time = time || 0;
+            let date = new Date();
+            date.setTime(date.getTime() + time);
+            _doc.cookie = key + '=' + escape(val) + ';path=/;expires=' + date.toGMTString();
+        }
+        users = document.getElementsByClassName('card');
+        // console.log(users);
+        // console.log(users.length);
+        user = ele.parentNode
+        while (user.nodeName == '#text' || user.getAttribute('class') != 'card') {
+            user = user.parentNode;
+        }
+        // console.log(user);
+        for (i = 0; i < users.length; i++) {
+            if (users[i] == user) {
+                break;
+            }
+        }
+        setCookie('_zca', zca[i], semih)//cookie有效时间半小时
+        // console.log("i=", i);
+        sessions = user.getElementsByClassName('form-check-input');
+        // console.log(sessions)
+        // console.log(ele)
+        // console.log(ele == sessions[0])
+        for (j = 0; j < sessions.length; j++) {
+            if (sessions[j] == ele) {
+                break;
+            }
+        }
+        // console.log("j=", j);
+        if (!zcb[i][j]) {
+            zcb[i][j] = (new Date).getTime();
+        }
+        // console.log("i=", i);
+        setCookie('_zcb', zcb[i][j], semih);
+        console.log(zca);
+        console.log(zcb);
+    }
+
+</script>
+
+</html>

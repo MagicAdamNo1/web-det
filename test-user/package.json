@@ -1,0 +1,17 @@
+{
+  "name": "web-det",
+  "version": "1.0.0",
+  "description": "展示前端用户点击事件数据采集和数据预处理结果",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "split2": "^3.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

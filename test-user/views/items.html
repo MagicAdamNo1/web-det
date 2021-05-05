@@ -1,0 +1,72 @@
+<!--
+ * @Descripttion: 
+ * @version: v0.1
+ * @Author: Elon C
+ * @Date: 2021-04-02 17:06:26
+ * @LastEditors: Elon C
+ * @LastEditTime: 2021-04-22 21:27:45
+ * @FilePath: \web-det\web-det\views\items.html
+-->
+<html>
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Items Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.bootcss.com/jquery/3.2.0/jquery.js"></script>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <th>
+                NodeName
+            </th>
+            <th>
+                Text
+            </th>
+            <th>
+                Url(href)
+            </th>
+            <!-- <th>
+                clickSeries
+            </th> -->
+        </tr>
+    </table>
+</body>
+<script>
+    $(document).ready(function () {
+        $.getJSON('/keys', function (res) {
+            for (i = 0; i < res['length']; i++) {
+                data = res.data[i];
+                // console.log(data);
+                // console.log($('table').children('tr').last())
+
+                var table = document.getElementsByTagName("table");
+
+                newline = document.createElement("tr");
+
+                nname = document.createElement('td');
+                nname.innerHTML = data.NodeName;
+                newline.appendChild(nname);
+
+                text = document.createElement('td');
+                text.innerHTML = data.Text;
+                newline.appendChild(text);
+
+                url = document.createElement('td');
+                url.innerHTML = data.clickFrequencies;
+                newline.appendChild(url);
+
+                table[0].appendChild(newline);
+            }
+
+            // var lastChild = table.lastChild
+            // $('table').children('tr').last().after('<tr><td>师傅</td></tr>');
+        })
+    });
+</script>
+
+</html>
